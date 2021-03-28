@@ -63,10 +63,11 @@ promiseCall1().then((res)=>console.log(res))
               .then(()=>promiseCall3())
               .then((res)=>promiseCheck(res))
               .then((res)=>console.log(res))
-              .then(()=>console.log('E'))
-              .then(()=>console.log('F'))
-              .then(()=>console.log("G"))
-              .catch((err)=>console.log(err))
+              .then(()=>{
+                      console.log('E');
+                      console.log('F');
+                      console.log("G")
+              }).catch((err)=>console.log(err))
 
 
 //Question 3:version avec async await de ce code
